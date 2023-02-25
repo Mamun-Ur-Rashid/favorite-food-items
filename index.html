@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite food</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <div class="navbar bg-blue-200 px-12">
+            <div class="navbar-start">
+
+                <img src="./images/Tasty_HUT.png" alt="">
+            </div>
+            <div class="navbar-end">
+                <button class="btn bg-green-300">Sign Up</button>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- banner section -->
+        <section>
+            <div id="img" class="  text-center justify-center">
+
+                <h1 class="pt-40 text-5xl font-semibold text-white">Taste Our Delicious <br> Best Foods</h1>
+                <p class="my-8 text-white">There are many variatiaons of passages of lorem ipsum available but the
+                    majority have <br> suffered atteration in som form by injected human</p>
+                <input id="search-input" type="text" placeholder="Search any Food"
+                    class="input input-bordered text-xl input-md w-full max-w-xs" />
+                <button id="btn-search" class="btn bg-green-300 text-xl" onclick="searchMeals()">Search</button>
+            </div>
+            <div id="container" class="my-5 grid grid-cols-1 md:grid-cols-2 gap-4 w-11/12 mx-auto">
+
+            </div>
+        </section>
+        <!-- view container -->
+        <section id="view-cont">
+
+        </section>
+        <!-- modal section -->
+        <input type="checkbox" id="view-details" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+            <div id="modal-body" class="modal-box w-95 h-100">
+                <h3 id="modal-title" class="font-bold text-lg"></h3>
+                <p class="py-4"></p>
+                <div class="modal-action">
+                    <label for="view-details" class="btn">close</label>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
